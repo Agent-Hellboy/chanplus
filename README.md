@@ -58,7 +58,8 @@ func main() {
 
 For detailed API documentation, please refer to the [GoDoc](https://pkg.go.dev/github.com/Agent-Hellboy/chanplus) page.
 
-everything below is just a joke, please ignore it.
+**EVERYTHING BELOW IS JUST A JOKE, PLEASE IGNORE IT.**
+
 
 ## Why Chanplus?
 
@@ -81,6 +82,16 @@ We have several ideas for expanding and improving Chanplus in the future:
 5. **Channel patterns**: Implement common channel patterns like worker pools and pipelines.
 6. **Context integration**: Add support for cancellation and deadlines using Go's context package.
 7. **Performance optimizations**: Continuously improve performance for high-throughput scenarios.
+8. **Evaluate benefits for concurrency patterns**: Assess the advantages of using Chanplus in various scenarios such as:
+   - Pipelines
+   - Fan-in/fan-out
+   - Worker pools
+   - Pub/sub systems
+   - Rate limiting
+   - Timeouts and cancellation
+   - Broadcast channels
+   - Multiplexing and demultiplexing
+
 
 ## Contributing
 
