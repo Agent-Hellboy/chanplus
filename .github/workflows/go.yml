@@ -23,7 +23,7 @@ jobs:
 
     - name: Run tests with coverage
       run: |
-        go test -v -coverprofile=coverage.tmp $(go list ./... | grep -v /chanplus/)
+        go test -v -coverprofile=coverage.tmp $(go list ./... | grep -v /chanplus/a)
         cat coverage.tmp | grep -v "/chanplus/" | grep -v "_test\.go" > coverage.txt
         rm coverage.tmp
 
