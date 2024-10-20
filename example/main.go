@@ -1,8 +1,9 @@
 package main
 
 import (
-	"chanplus/chanplus"
 	"fmt"
+
+	"github.com/Agent-Hellboy/chanplus/chanplus"
 )
 
 func main() {

@@ -3,7 +3,7 @@ package chanplus_test
 import (
 	"testing"
 
-	"chanplus/chanplus"
+	"github.com/Agent-Hellboy/chanplus/chanplus"
 )
 
 // TestChannelSendAndReceive tests basic Send and Receive operations.
