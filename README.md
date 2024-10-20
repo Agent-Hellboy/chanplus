@@ -2,6 +2,9 @@
 
 Chanplus is a Go package that provides a safe, introspective wrapper for channels. It allows users to easily create, manage, and inspect channels while ensuring thread-safe operations.
 
+[![Go Reference](https://pkg.go.dev/badge/github.com/Agent-Hellboy/chanplus.svg)](https://pkg.go.dev/github.com/Agent-Hellboy/chanplus)
+[![Go Report Card](https://goreportcard.com/badge/github.com/Agent-Hellboy/chanplus)](https://goreportcard.com/report/github.com/Agent-Hellboy/chanplus)
+[![codecov](https://codecov.io/gh/Agent-Hellboy/chanplus/branch/main/graph/badge.svg)](https://codecov.io/gh/Agent-Hellboy/chanplus)
 
 
 ## Disclaimer
@@ -26,9 +29,6 @@ To install Chanplus, use the following command:
 go get github.com/Agent-Hellboy/chanplus
 ```
 
-[![Go Reference](https://pkg.go.dev/badge/github.com/Agent-Hellboy/chanplus.svg)](https://pkg.go.dev/github.com/Agent-Hellboy/chanplus)
-[![Go Report Card](https://goreportcard.com/badge/github.com/Agent-Hellboy/chanplus)](https://goreportcard.com/report/github.com/Agent-Hellboy/chanplus)
-[![codecov](https://codecov.io/gh/Agent-Hellboy/chanplus/branch/main/graph/badge.svg)](https://codecov.io/gh/Agent-Hellboy/chanplus)
 
 ## Usage
 
