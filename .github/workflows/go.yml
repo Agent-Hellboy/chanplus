@@ -24,7 +24,7 @@ jobs:
     - name: Run tests with coverage
       run: |
         go test -v -coverprofile=coverage.tmp $(go list ./... | grep -v /chanplus/a)
-        cat coverage.tmp | grep -v "/chanplus/" | grep -v "_test\.go" > coverage.txt
+        cat coverage.tmp | grep -v "/chanplus/a" | grep -v "_test\.go" > coverage.txt
         rm coverage.tmp
 
     - name: Upload coverage to Codecov
