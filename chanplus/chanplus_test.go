@@ -1,14 +1,12 @@
-package chanplus_test
+package chanplus
 
 import (
 	"testing"
-
-	"github.com/Agent-Hellboy/chanplus/chanplus"
 )
 
 // TestChannelSendAndReceive tests basic Send and Receive operations.
 func TestChannelSendAndReceive(t *testing.T) {
-	ch := chanplus.New[int](1)
+	ch := New[int](1)
 	if !ch.Send(10) {
 		t.Errorf("Send failed, expected true")
 	}
@@ -21,7 +19,7 @@ func TestChannelSendAndReceive(t *testing.T) {
 
 // TestChannelClose tests closing a channel and verifying it doesn't accept further sends.
 func TestChannelClose(t *testing.T) {
-	ch := chanplus.New[int](1)
+	ch := New[int](1)
 
 	// Close the channel
 	ch.Close()
@@ -42,7 +40,7 @@ func TestChannelClose(t *testing.T) {
 
 // TestLenAndCap tests Len and Cap methods for introspection.
 func TestLenAndCap(t *testing.T) {
-	ch := chanplus.New[int](3)
+	ch := New[int](3)
 
 	if ch.Cap() != 3 {
 		t.Errorf("Expected capacity to be 3, got %d", ch.Cap())
@@ -60,7 +58,7 @@ func TestLenAndCap(t *testing.T) {
 
 // TestStringChannel tests the channel with string type.
 func TestStringChannel(t *testing.T) {
-	ch := chanplus.New[string](2)
+	ch := New[string](2)
 
 	if !ch.Send("hello") {
 		t.Errorf("Send failed, expected true")
@@ -87,7 +85,7 @@ func TestStructChannel(t *testing.T) {
 		Age  int
 	}
 
-	ch := chanplus.New[Person](1)
+	ch := New[Person](1)
 
 	person := Person{Name: "Alice", Age: 30}
 
